@@ -1,0 +1,29 @@
+input: data/claude.jsonl
+max_rows: 0
+
+output:
+  spring_only: data/spring_only.jsonl
+  all_scored: data/scored_all.jsonl
+
+thresholds:
+  patch_min: 10
+  final_min: 40
+
+github:
+  enabled: false
+  cache_db: data/repo_cache.sqlite
+  cache_max_age_hours: 168
+  token_source:
+    token: ""
+    token_file: ""
+  tls:
+    ca_bundle: ""
+    insecure: false
+
+http:
+  timeout: 30
+  retries: 4
+
+progress:
+  enabled: true
+  every: 250

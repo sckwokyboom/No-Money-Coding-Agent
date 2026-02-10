@@ -1,0 +1,21 @@
+input: data/spring_only.jsonl
+top: 20
+
+github:
+  enabled: false
+  repo_info: false
+  max_repos: 0
+  token_source:
+    token: ""
+    token_file: ""
+  tls:
+    ca_bundle: ""
+    insecure: false
+
+http:
+  timeout: 30
+  retries: 4
+
+progress:
+  enabled: true
+  every: 250
