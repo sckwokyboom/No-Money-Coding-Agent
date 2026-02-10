@@ -1,4 +1,4 @@
-input: data/claude.jsonl
+input: /Users/sckwoky/Downloads/claude-20250813.jsonl
 max_rows: 0
 
 output:
